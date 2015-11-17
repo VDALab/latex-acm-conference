@@ -1,0 +1,67 @@
+\documentclass{sig-alternate}
+
+\usepackage{url,graphicx,subfigure,algcompatible,comment,amsmath,units,threeparttable,multirow,colortbl,booktabs,setspace,textcomp}
+
+
+\usepackage[ruled]{algorithm2e}
+\begin{document}
+
+\setcopyright{acmcopyright}
+% DOI
+%\doi{10.475/123_4}
+
+% ISBN
+%\isbn{123-4567-24-567/08/06}
+
+%Conference
+\conferenceinfo{DAC '16}{June 5--9, 2016, Auxtin, TX, USA}
+
+\acmPrice{\$15.00}
+
+
+
+
+\title{Alternate {\ttlit ACM} SIG Proceedings Paper in LaTeX
+Format\titlenote{(Produces the permission block, and
+copyright information). For use with
+SIG-ALTERNATE.CLS. Supported by ACM.}}
+\subtitle{[Extended Abstract]
+\titlenote{A full version of this paper is available as
+\textit{Author's Guide to Preparing ACM SIG Proceedings Using
+\LaTeX$2_\epsilon$\ and BibTeX} at
+\texttt{www.acm.org/eaddress.htm}}}
+%
+\numberofauthors{2}
+
+\author{
+% 1st. author
+\alignauthor
+Po-Cheng Pan\titlenote{note}\\
+       \affaddr{Institute of Electronics and SoC Center}\\
+       \affaddr{National Chiao Tung University}\\
+       \affaddr{Hsinchu, Taiwan}\\
+       \email{pocheng.pan@g2.nctu.edu.tw}
+% 2nd. author
+\alignauthor
+Prof. Hung-Ming Chen\titlenote{Professor}\\
+       \affaddr{Institute of Electronics and SoC Center}\\
+       \affaddr{National Chiao Tung University}\\
+       \affaddr{Hsinchu, Taiwan}\\
+       \email{hmchen@mail.nctu.edu.tw}
+}
+
+
+
+
+\maketitle
+
+\begin{abstract}
+  This is the abastract section
+\end{abstract}
+
+\input{content.tex}
+
+\bibliographystyle{abbrv}
+\bibliography{sigproc,reference}
+
+\end{document}
