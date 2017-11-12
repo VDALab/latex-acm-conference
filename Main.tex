@@ -1,54 +1,74 @@
-\documentclass{sig-alternate}
+\documentclass[10pt,sigconf]{acmart}
+
+\usepackage{booktabs} % For formal tables
 
 \usepackage{url,graphicx,subfigure,algcompatible,comment,amsmath,units,threeparttable,multirow,colortbl,booktabs,setspace,textcomp}
 
 
 \usepackage[ruled]{algorithm2e}
-\begin{document}
 
-\setcopyright{acmcopyright}
+
+% Copyright
+%\setcopyright{none}
+%\setcopyright{acmcopyright}
+%\setcopyright{acmlicensed}
+\setcopyright{rightsretained}
+%\setcopyright{usgov}
+%\setcopyright{usgovmixed}
+%\setcopyright{cagov}
+%\setcopyright{cagovmixed}
+
+
 % DOI
-%\doi{10.475/123_4}
+\acmDOI{10.475/123_4}
 
 % ISBN
-%\isbn{123-4567-24-567/08/06}
+\acmISBN{123-4567-24-567/08/06}
 
 %Conference
-\conferenceinfo{DAC '16}{June 5--9, 2016, Auxtin, TX, USA}
-
-\acmPrice{\$15.00}
-
-
+\acmConference[DAC'18]{ACM Design Automation Conference}{June 2018}{San Francisco, CA USA} 
+\acmYear{2018}
+\copyrightyear{2018}
 
 
-\title{Alternate {\ttlit ACM} SIG Proceedings Paper in LaTeX
-Format\titlenote{(Produces the permission block, and
-copyright information). For use with
-SIG-ALTERNATE.CLS. Supported by ACM.}}
-\subtitle{[Extended Abstract]
-\titlenote{A full version of this paper is available as
-\textit{Author's Guide to Preparing ACM SIG Proceedings Using
-\LaTeX$2_\epsilon$\ and BibTeX} at
-\texttt{www.acm.org/eaddress.htm}}}
+\acmArticle{4}
+\acmPrice{15.00}
+
+% These commands are optional
+%\acmBooktitle{Transactions of the ACM Woodstock conference}
+
+
+\begin{document}
+\title{ACM conference paper title}
+%\titlenote{Produces the permission block, and
+%  copyright information}
+%\subtitle{Extended Abstract}
+%\subtitlenote{The full version of the author's guide is available as
+%  \texttt{acmart.pdf} document}
+
 %
-\numberofauthors{2}
 
-\author{
-% 1st. author
-\alignauthor
-Po-Cheng Pan\titlenote{note}\\
-       \affaddr{Institute of Electronics and SoC Center}\\
-       \affaddr{National Chiao Tung University}\\
-       \affaddr{Hsinchu, Taiwan}\\
-       \email{pocheng.pan@g2.nctu.edu.tw}
-% 2nd. author
-\alignauthor
-Prof. Hung-Ming Chen\titlenote{Professor}\\
-       \affaddr{Institute of Electronics and SoC Center}\\
-       \affaddr{National Chiao Tung University}\\
-       \affaddr{Hsinchu, Taiwan}\\
-       \email{hmchen@mail.nctu.edu.tw}
+\author{Po-Cheng Pan}
+\orcid{1234-5678-9012}
+\affiliation{%
+  \institution{Dept. of EE, NCTU}
+  \streetaddress{No. 1001 Daxue Rd.}
+  \city{Hsinchu} 
+  \state{Taiwan} 
+  \postcode{30010}
 }
+\email{pocheng.pan@g2.nctu.edu.tw}
+
+\author{Hung-Ming Chen}
+\affiliation{%
+  \institution{Dept. of EE, NCTU}
+  \streetaddress{No. 1001 Daxue Rd.}
+  \city{Hsinchu} 
+  \state{Taiwan} 
+  \postcode{30010}
+}
+\email{hmchen@mail.nctu.edu.tw}
+
 
 
 
@@ -61,7 +81,7 @@ Prof. Hung-Ming Chen\titlenote{Professor}\\
 
 \input{content.tex}
 
-\bibliographystyle{abbrv}
-\bibliography{sigproc,reference}
+\bibliographystyle{ACM-Reference-Format}
+\bibliography{sample-bibliography,reference} 
 
 \end{document}
